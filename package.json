@@ -1,0 +1,30 @@
+{
+  "name": "fc-career-hub-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Node.js API for FC Career Hub Electron/Web sync",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.18.0",
+    "morgan": "^1.10.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.8.3"
+  }
+}
