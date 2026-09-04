@@ -4,9 +4,11 @@ import { env } from './config/env';
 
 async function bootstrap() {
   await mongoose.connect(env.MONGODB_URI);
+
   console.log('MongoDB connected');
 
   const app = createApp();
+
   app.listen(env.PORT, () => {
     console.log(`FC Career Hub API: http://localhost:${env.PORT}`);
     console.log('Data source: MongoDB');
